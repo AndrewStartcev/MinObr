@@ -1,0 +1,43 @@
+.programs {
+	padding: 50px 0 90px;
+	.container {
+		overflow: visible;
+		background: url('../img/elem.svg') center center / contain no-repeat;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 20px;
+	}
+	&__item {
+		flex: 1 1 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	&__top {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 250%;
+		color: #ffffff;
+		background: #0064b0;
+		box-shadow: 0px -6px 3px -4px rgba(0, 0, 0, 0.25);
+		border-radius: 40px 40px 0px 0px;
+		padding: 3px 46px;
+	}
+	&__content {
+		flex: 1 1 100%;
+		width: 100%;
+		background: #ffffff;
+		box-shadow: 5px -4px 6px -2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 0px 0px 40px 40px;
+		padding: 18px 46px;
+		background: #ffffff;
+		box-shadow: 5px -4px 6px -2px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 0px 0px 40px 40px;
+	}
+}
