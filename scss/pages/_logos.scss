@@ -1,0 +1,15 @@
+.logos {
+	padding: 50px 0px 60px;
+	position: relative;
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 30px 50px;
+		margin-top: 50px;
+		&:first-of-type {
+			margin-bottom: 50px;
+		}
+	}
+}
