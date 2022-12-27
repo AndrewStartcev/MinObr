@@ -3,78 +3,66 @@
 
 @import 'common/global';
 
+@import 'pages/_sidebar';
+
+.title {
+	margin: 0;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 120%;
+	text-align: center;
+	&._min {
+		width: 65%;
+		text-align: left;
+		font-size: 20px;
+		line-height: 120%;
+	}
+}
+
+@import 'pages/statistics';
+@import 'pages/info';
+@import 'pages/queston';
+
+._white {
+	background: #fff;
+	color: #012b6b;
+	.btn {
+		background: #012b6b;
+	}
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	padding: 12px;
+	max-width: 330px;
+	width: 100%;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+	background: #0095da;
+	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+	border-radius: 40px;
+	margin-top: 30px;
+}
+
 // Страницы и блоки
 .main {
 	padding: 0;
 	padding: 65px 0px;
 	background: #012b6b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	img {
 		max-width: 100%;
-	}
-}
-
-.about {
-	padding-top: 40px 0px 200px;
-	position: relative;
-	.container {
-		position: relative;
-	}
-
-	&__content {
-		position: relative;
-		z-index: 1;
-		display: flex;
-		justify-content: space-between;
-		align-items: stretch;
-		gap: 30px 36px;
-	}
-	&__img {
-		flex: 0 0 270px;
-		width: 100%;
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			border-radius: 40px;
-		}
-	}
-	h2 {
-		text-align: center;
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 120%;
-		color: #012b6b;
-	}
-	&__text {
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 140%;
-		color: #012b6b;
-	}
-}
-
-@include media-mobile-horizontal {
-	.about {
-		padding-top: 40px 0px 80px;
-		&__content {
-			flex-wrap: wrap;
-			gap: 20px 30px;
-		}
-		&__img {
-			flex: 1 1 auto;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			img {
-				width: 80%;
-			}
-		}
-		h2 {
-			font-size: 30px;
-		}
-		&__text {
-			font-size: 14px;
-			text-align: justify;
-		}
 	}
 }
