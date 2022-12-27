@@ -1,0 +1,73 @@
+@import 'utils/variables';
+@import 'mixins/media';
+
+@import 'common/global';
+
+// Страницы и блоки
+.main {
+	padding: 0;
+	padding: 65px 0px;
+	background: #012b6b;
+	img {
+		max-width: 100%;
+	}
+}
+
+.about {
+	padding-top: 40px 0px 200px;
+	position: relative;
+	.container {
+		position: relative;
+	}
+
+	&__content {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 30px 36px;
+	}
+	&__img {
+		flex: 0 0 270px;
+	}
+	h2 {
+		text-align: center;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 120%;
+		color: #012b6b;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 140%;
+		color: #012b6b;
+	}
+}
+
+@include media-mobile-horizontal {
+	.about {
+		padding-top: 40px 0px 80px;
+		&__content {
+			flex-wrap: wrap;
+			gap: 20px 30px;
+		}
+		&__img {
+			flex: 1 1 auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 80%;
+			}
+		}
+		h2 {
+			font-size: 30px;
+		}
+		&__text {
+			font-size: 14px;
+			text-align: justify;
+		}
+	}
+}

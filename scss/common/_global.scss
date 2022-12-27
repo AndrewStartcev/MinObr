@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.3s ease;
+	&:hover {
+	}
+}
+a,
+button {
+	cursor: pointer;
+	color: inherit;
+	border: none;
+}
+
+body {
+	margin: 0;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+section {
+	padding: 70px 0;
+	@include media-tablet-horizontal {
+		padding: 45px 0;
+	}
+	@include media-tablet {
+		padding: 50px 0;
+	}
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+._lock {
+	overflow: hidden;
+}
+.content {
+	flex: 1 1 auto;
+}
+.content,
+.header,
+.footer {
+	width: 100%;
+}
+
+.container {
+	max-width: 850px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	@include media-tablet {
+		padding: 0px 10px;
+	}
+}
