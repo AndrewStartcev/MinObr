@@ -57,6 +57,12 @@
 	&:hover {
 		background: lighten($color: #0095da, $amount: 10);
 	}
+	@include media-mobile-horizontal {
+		justify-self: center;
+		align-self: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 // Страницы и блоки
