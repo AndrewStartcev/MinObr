@@ -519,6 +519,12 @@ body {
 .logos__wrapper:first-of-type {
   margin-bottom: 50px;
 }
+@media (max-width: 767.8px) {
+  .logos__wrapper {
+    flex: 1 1 calc(30% - 15px);
+    gap: 20px 45px;
+  }
+}
 .logos__item {
   display: flex;
   justify-content: center;
@@ -533,6 +539,14 @@ body {
 @media (max-width: 767.8px) {
   .logos__item {
     flex: 1 1 calc(30% - 15px);
+  }
+  .logos__item img {
+    padding: 17px;
+    width: auto;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    image-rendering: optimizeSpeed;
   }
 }
 

@@ -11,17 +11,29 @@
 		&:first-of-type {
 			margin-bottom: 50px;
 		}
+		@include media-mobile-horizontal {
+			flex: 1 1 calc(30% - 15px);
+			gap: 20px 45px;
+		}
 	}
 	&__item {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 		flex: 1 1 calc(15% - 15px);
 		@include media-tablet {
 			flex: 1 1 calc(25% - 15px);
 		}
 		@include media-mobile-horizontal {
 			flex: 1 1 calc(30% - 15px);
+			img {
+				padding: 17px;
+				width: auto;
+				height: auto;
+				object-fit: contain;
+				image-rendering: optimizeSpeed;
+			}
 		}
 	}
 	// img {
