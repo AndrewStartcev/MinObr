@@ -542,11 +542,13 @@ body {
   }
   .logos__item img {
     padding: 17px;
+    -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: pixelated;
     width: auto;
     height: auto;
     -o-object-fit: contain;
        object-fit: contain;
-    image-rendering: optimizeSpeed;
   }
 }
 

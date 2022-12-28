@@ -29,10 +29,10 @@
 			flex: 1 1 calc(30% - 15px);
 			img {
 				padding: 17px;
+				image-rendering: pixelated;
 				width: auto;
 				height: auto;
 				object-fit: contain;
-				image-rendering: optimizeSpeed;
 			}
 		}
 	}
