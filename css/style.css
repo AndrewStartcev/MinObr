@@ -641,6 +641,44 @@ body {
   overflow: visible;
   background: url("../img/elem.svg") bottom right/contain no-repeat;
 }
+.how-reader .title {
+  max-width: 600px;
+  margin: 0 auto;
+}
+@media (max-width: 767.8px) {
+  .how-reader .title {
+    font-size: 18px;
+  }
+}
+.how-reader__block {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: #ffffff;
+  color: #012b6b;
+  border-radius: 15px;
+  padding: 15px 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+@media (max-width: 767.8px) {
+  .how-reader__block {
+    font-size: 14px;
+    padding: 20px 15px;
+  }
+}
+.how-reader__block p {
+  margin: 0;
+}
+.how-reader__block a {
+  color: #ec0f2a;
+}
+.how-reader .btn-center {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
 .how-reader__text {
   margin-top: 30px;
 }
