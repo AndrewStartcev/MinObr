@@ -345,6 +345,12 @@ body {
   padding: 50px 0px 60px;
   position: relative;
 }
+.queston .btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0 30px;
+}
 .queston._reverse .container {
   flex-direction: row-reverse;
 }
@@ -353,6 +359,12 @@ body {
 }
 .queston._reverse .container::before {
   display: none;
+}
+.queston._reverse .btn {
+  position: absolute;
+  left: auto;
+  right: 0;
+  bottom: 0;
 }
 .queston .container {
   display: flex;
@@ -422,7 +434,7 @@ body {
 .queston__author {
   position: relative;
   z-index: 1;
-  flex: 0 0 340px;
+  flex: 0 0 290px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -430,18 +442,21 @@ body {
   text-align: center;
 }
 .queston__photo {
-  width: 210px;
-  height: 210px;
+  width: 290px;
+  height: 310px;
+  border-radius: 41px;
 }
 .queston__photo img {
-  width: 100%;
-  height: 100%;
+  width: 130%;
+  height: 130%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 40px;
+  -o-object-position: top center;
+     object-position: top center;
 }
 .queston__tablo {
-  margin-top: 20px;
+  margin-top: -47px;
   padding: 15px;
   gap: 7px;
   background: #ffffff;
@@ -454,9 +469,29 @@ body {
   .queston .container {
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .queston .container::after {
     display: none;
+  }
+  .queston._reverse .container {
+    flex-direction: column;
+  }
+  .queston._reverse .btn {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin: 0;
+    width: 100%;
+  }
+  .queston .btn {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin: 0;
+    width: 100%;
   }
   .queston__block {
     flex: 0 0 auto;
@@ -476,13 +511,29 @@ body {
 .logos__wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 30px 50px;
   margin-top: 50px;
 }
 .logos__wrapper:first-of-type {
   margin-bottom: 50px;
+}
+.logos__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 calc(15% - 15px);
+}
+@media (max-width: 1023.8px) {
+  .logos__item {
+    flex: 1 1 calc(25% - 15px);
+  }
+}
+@media (max-width: 767.8px) {
+  .logos__item {
+    flex: 1 1 calc(30% - 15px);
+  }
 }
 
 .contacts {
@@ -657,6 +708,9 @@ body {
 ._white .btn {
   background: #012b6b;
 }
+._white .btn:hover {
+  background: #011738;
+}
 
 .btn {
   display: flex;
@@ -674,6 +728,9 @@ body {
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
   border-radius: 40px;
   margin-top: 30px;
+}
+.btn:hover {
+  background: #0eb3ff;
 }
 
 .main {
